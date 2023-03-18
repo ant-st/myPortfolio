@@ -12,20 +12,25 @@ function App() {
     }, []);
 
     const [page, setPage] = useState();
+    const [polish, setPolish] = useState(true);
     const handleClick = ({target}) => {
         setPage(target.id);
+    }
+    const toggleLang = () => {
+        if (polish) setPolish(false);
+        else setPolish(true);
     }
 
     const renderPage = () => {
         switch (page) {
             case 'navEdu':
-                return <Education/>
+                return <Education polish={polish}/>
             case 'navSkill':
-                return <Skills/>
+                return <Skills polish={polish}/>
             case 'navPort':
-                return <Portfolio/>;
+                return <Portfolio polish={polish}/>;
             default:
-                return <Home/>;
+                return <Home polish={polish}/>;
         }
     }
 
@@ -35,10 +40,10 @@ function App() {
             <h1 onClick={handleClick} id='navHome'>Antoni Sarnowski-Trypka</h1>
             <nav className="navBar">
                 <ul>
-                    <li id="navEdu" onClick={handleClick}>Edukacja</li>
-                    <li id="navSkill" onClick={handleClick}>Umiejętności</li>
+                    <li id="navEdu" onClick={handleClick}>{polish ? 'Edukacja' : 'Education' }</li>
+                    <li id="navSkill" onClick={handleClick}>{polish ? 'Umiejętności' : 'Skills' }</li>
                     <li id="navPort" onClick={handleClick}>Portfolio</li>
-                    <li>🇵🇱</li>
+                    <li onClick={toggleLang}>{polish ? '🇬🇧' : '🇵🇱' }</li>
                 </ul>
             </nav>
         </header>
