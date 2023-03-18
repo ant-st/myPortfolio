@@ -3,13 +3,13 @@ import './education.css'
 
 export const Education = () => {
     return (
-        <section className="education">
+        <section className="education" data-aos="fade-down">
             <section id="codecademy">
                 <img src={require('./codelogo.png')} alt="Logo codecademy" id="codelogo"/>
                 <p>Pod koniec 2022 roku rozpocząłem naukę w kierunku Front-End Developera na amerykańskiej platformie Codecademy.</p>
                 <p>Ukończyłem następujące kursy:</p>
                 <ul>
-                    <li><a href="https://www.codecademy.com/learn/paths/web-development" target="_blank">ścieżka umiejętności "Web Development" - 11.2022 -> 02.2023</a></li>
+                    <li><a href="https://www.codecademy.com/learn/paths/web-development" target="_blank" rel="noopener noreferrer">ścieżka umiejętności "Web Development" - 11.2022 -> 02.2023</a></li>
                     <li>ścieżka kariery "Front-End Developer" - 11.2022 -> 04.2023</li>
                     <li>kurs "Learn Vue.js"</li>
                 </ul>

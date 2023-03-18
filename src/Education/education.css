@@ -16,8 +16,10 @@ Education page
 
 .education img {
     width: 20%;
+    min-width: 100px;
     float: right;
     margin-right: 5%;
+    margin-left: 10px;
 }
 
 .education a {
@@ -36,6 +38,13 @@ Education page
 
 #certificates img {
     width: 40%;
+    min-width: 250px;
     max-width: 700px;
     height: auto;
+}
+
+@media screen and (width<1220px) {
+    .education section {
+        font-size: min(22px,max(2vw,16px));;
+    }
 }

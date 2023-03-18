@@ -173,20 +173,20 @@ export const Skills = () => {
     },[skill]);
 
     return (
-        <section id="skills">
+        <section id="skills" data-aos="fade-down">
             <div id="description">
                 {content}
             </div>
             <div id="logos">
-                <img src={require('./html.png')} alt="HTML Logo" id="iconHTML" onClick={handleClick}/>
-                <img src={require('./css.png')} alt="CSS Logo" id="iconCSS" onClick={handleClick}/>
-                <img src={require('./javascript.png')} alt="JS Logo" id="iconJS" onClick={handleClick}/>
-                <img src={require('./react.png')} alt="React Logo" id="iconReact" onClick={handleClick}/>
-                <img src={require('./node.png')} alt="Node Logo" id="iconNode" onClick={handleClick}/>
-                <img src={require('./npm.png')} alt="NPM Logo" id="iconNPM" onClick={handleClick}/>
-                <img src={require('./a11y.png')} alt="A11Y Logo" id="iconAlly" onClick={handleClick}/>
-                <img src={require('./git.png')} alt="GIT Logo" id="iconGit" className='black' onClick={handleClick}/>
-                <img src={require('./terminal.png')} alt="Terminal Logo" id="iconTerminal" className='black' onClick={handleClick}/>
+                <img className="inactive" src={require('./html.png')} alt="HTML Logo" id="iconHTML" onClick={handleClick} />
+                <img className="inactive" src={require('./css.png')} alt="CSS Logo" id="iconCSS" onClick={handleClick} />
+                <img className="inactive" src={require('./javascript.png')} alt="JS Logo" id="iconJS" onClick={handleClick} />
+                <img className="inactive" src={require('./react.png')} alt="React Logo" id="iconReact" onClick={handleClick} />
+                <img className="inactive" src={require('./node.png')} alt="Node Logo" id="iconNode" onClick={handleClick} />
+                <img className="inactive" src={require('./npm.png')} alt="NPM Logo" id="iconNPM" onClick={handleClick} />
+                <img className="inactive" src={require('./a11y.png')} alt="A11Y Logo" id="iconAlly" onClick={handleClick} />
+                <img className="inactive black" src={require('./git.png')} alt="GIT Logo" id="iconGit"  onClick={handleClick} />
+                <img className="inactive black" src={require('./terminal.png')} alt="Terminal Logo" id="iconTerminal"  onClick={handleClick} />
             </div>
         </section>
     )
