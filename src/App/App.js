@@ -3,6 +3,7 @@ import './App.css';
 import {Education} from "../Education/education";
 import {Skills} from "../Skills/skills";
 import {Portfolio} from "../Portfolio/portfolio";
+import {Home} from "../Home/home";
 import AOS from 'aos';
 
 function App() {
@@ -24,14 +25,14 @@ function App() {
             case 'navPort':
                 return <Portfolio/>;
             default:
-                return ' ';
+                return <Home/>;
         }
     }
 
   return (
     <div className="App">
         <header className="App-header">
-            <h1>Antoni Sarnowski-Trypka</h1>
+            <h1 onClick={handleClick} id='navHome'>Antoni Sarnowski-Trypka</h1>
             <nav className="navBar">
                 <ul>
                     <li id="navEdu" onClick={handleClick}>Edukacja</li>

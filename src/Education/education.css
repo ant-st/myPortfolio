@@ -45,6 +45,6 @@ Education page
 
 @media screen and (width<1220px) {
     .education section {
-        font-size: min(22px,max(2vw,16px));;
+        font-size: min(22px,max(2vw,16px));
     }
 }

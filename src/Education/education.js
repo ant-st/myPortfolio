@@ -30,7 +30,7 @@ export const Education = () => {
                     <li>"Chmury Obliczeniowe" (Docker)</li>
                     <li>"Systemy operacyjne" (Operacje w terminalu i system Linux)</li>
                 </ul>
-                <p>Dobre wyniki, aktywne życie studenckie i średnia ocen ponad 5.0 pozwoliły uzyskać mi Stypendium Rektora na czas dwóch ostatnich semestrów.</p>
+                <p>Dobre wyniki, aktywne życie studenckie i średnia ocen ponad 5.0 pozwoliły mi uzyskać Stypendium Rektora na czas dwóch ostatnich semestrów.</p>
             </section>
             <section id="work">
                 <p>W marcu 2021 roku założyłem własną działalność gospodarczą zajmującą się systemami zabezpieczeń w domach i firmach - od wyceny, przez montaż i programowanie, po konserwacje.</p>

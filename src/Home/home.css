@@ -1,0 +1,27 @@
+#home {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    animation: summonOpacity 2s;
+    animation-fill-mode: backwards;
+
+}
+
+#home img {
+    width: 35%;
+    min-width: 250px;
+    border-radius: 30px;
+    opacity: 0.9;
+    box-shadow: 0 0 8px 8px #e4e3e1;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#home div {
+    width: 35%;
+    min-width: 250px;
+    font-size: min(22px,max(2vw,16px));
+    padding: 10px;
+    box-sizing: border-box;
+}
