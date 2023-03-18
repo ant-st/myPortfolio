@@ -1,0 +1,41 @@
+/*
+Education page
+ */
+
+.education section {
+    font-size: 22px;
+    border-bottom: 1px solid #474749;
+    margin: 10px 5%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.education li {
+    list-style: circle;
+}
+
+.education img {
+    width: 20%;
+    float: right;
+    margin-right: 5%;
+}
+
+.education a {
+    color: #474749;
+}
+
+.education a:hover {
+    text-decoration: none;
+}
+
+#certificates {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#certificates img {
+    width: 40%;
+    max-width: 700px;
+    height: auto;
+}
