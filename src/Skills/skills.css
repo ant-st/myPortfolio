@@ -97,3 +97,9 @@
         height: 30px;
     }
 }
+
+@media screen and (width<1220px) {
+    #logos {
+        float: none;
+    }
+}

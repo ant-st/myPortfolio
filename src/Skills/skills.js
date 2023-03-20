@@ -251,6 +251,30 @@ export const Skills = (props) => {
         </div>
     )
 
+    const desVue = (
+        <div>
+            {props.polish ?
+                (<div>
+                    <p>Jestem zaznajomiony z frameworkiem Vue.js na poziomie podstawowym. Cały czas poszerzam swą wiedzę w tym zakresie.</p>
+                    <p>Wybrane umiejętności:</p>
+                    <ul>
+                        <li>Dodanie Vue do projektu</li>
+                        <li>Tworzenie formularzy</li>
+                        <li>Budowanie designu strony</li>
+                    </ul>
+                </div>) : (<div>
+                    <p>I am familiar with basics of Vue.js framework, but I keep on learning this subject.</p>
+                    <p>Some of my skills:</p>
+                    <ul>
+                        <li>Implementing Vue onto website</li>
+                        <li>Making forms</li>
+                        <li>Building website's design</li>
+                    </ul>
+                </div>)
+            }
+        </div>
+    )
+
     const desDefault = (
         <div>
             {props.polish ?
@@ -302,6 +326,9 @@ export const Skills = (props) => {
             case 'iconTerminal':
                 setContent(desTerminal);
                 break;
+            case 'iconVue':
+                setContent(desVue);
+                break;
             default:
                 setContent(desDefault);
                 break;
@@ -319,6 +346,7 @@ export const Skills = (props) => {
                 <img className="inactive" src={require('./css.png')} alt="CSS Logo" id="iconCSS" onClick={handleClick} />
                 <img className="inactive" src={require('./javascript.png')} alt="JS Logo" id="iconJS" onClick={handleClick} />
                 <img className="inactive" src={require('./react.png')} alt="React Logo" id="iconReact" onClick={handleClick} />
+                <img className="inactive" src={require('./vue.png')} alt="Vue Logo" id="iconVue" onClick={handleClick} />
                 <img className="inactive" src={require('./node.png')} alt="Node Logo" id="iconNode" onClick={handleClick} />
                 <img className="inactive" src={require('./npm.png')} alt="NPM Logo" id="iconNPM" onClick={handleClick} />
                 <img className="inactive" src={require('./a11y.png')} alt="A11Y Logo" id="iconAlly" onClick={handleClick} />

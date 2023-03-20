@@ -48,7 +48,7 @@ function App() {
             </nav>
         </header>
         <section id="contact">
-            <a href="https://ant-st.github.com" target="_blank" rel="noopener noreferrer" ><img src={require('./ghlogo.png')} alt="GitHub logo"/></a>
+            <a href="https://github.com/ant-st" target="_blank" rel="noopener noreferrer" ><img src={require('./ghlogo.png')} alt="GitHub logo"/></a>
             <a href="https://www.linkedin.com/in/antoni-sarnowski-trypka-268079263/" target="_blank" rel="noopener noreferrer" ><img src={require('./linkedlogo.png')} alt="LinkedIn logo"/></a>
             <a href="mailto:antsarnow@gmail.com" target="_blank" rel="noopener noreferrer" ><img src={require('./mailicon.png')} alt="Mail icon"/></a>
         </section>
@@ -56,7 +56,7 @@ function App() {
             {renderPage()}
         </section>
         <section id="contactMobile">
-            <a href="https://ant-st.github.com" target="_blank" rel="noopener noreferrer" ><img src={require('./ghlogo.png')} alt="GitHub logo"/></a>
+            <a href="https://github.com/ant-st" target="_blank" rel="noopener noreferrer" ><img src={require('./ghlogo.png')} alt="GitHub logo"/></a>
             <a href="https://www.linkedin.com/in/antoni-sarnowski-trypka-268079263/" target="_blank" rel="noopener noreferrer" ><img src={require('./linkedlogo.png')} alt="LinkedIn logo"/></a>
             <a href="mailto:antsarnow@gmail.com" target="_blank" rel="noopener noreferrer" ><img src={require('./mailicon.png')} alt="Mail icon"/></a>
         </section>
