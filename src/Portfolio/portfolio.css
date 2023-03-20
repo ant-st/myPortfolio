@@ -16,9 +16,12 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+
     background-color: rgba(242, 240, 237, 0.9);
     width: 30%;
     min-width: 250px;
@@ -26,11 +29,13 @@
     color: #0d0d0d;
     font-size: 20px;
     padding: 10px;
+    margin: 10px;
     box-sizing: border-box;
+
     animation: summonOpacity 1s;
     animation-delay: 1s;
     animation-fill-mode: backwards;
-    margin: 10px;
+
 }
 
 .container img {

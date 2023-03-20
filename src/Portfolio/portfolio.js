@@ -23,7 +23,7 @@ export const Portfolio = (props) => {
                     <p>Właśnie ta strona - zbudowana w react.js, z animacjami CSS</p>
                     <div className="buttons">
                         <a href='https://portfolio-42c10.web.app' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='Portfolio - URL'/></a>
-                        <a href='https://github.com/ant-st/NovoGardenv2' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - NovoGarden'/></a>
+                        <a href='https://github.com/ant-st/myPortfolio' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - Portfolio'/></a>
                     </div>
                 </div>
             </section>
@@ -38,6 +38,15 @@ export const Portfolio = (props) => {
                             <div className="buttons">
                                 <a href='https://novogarden-d8d0e.web.app' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='NovoGarden - URL'/></a>
                                 <a href='https://github.com/ant-st/NovoGardenv2' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - NovoGarden'/></a>
+                            </div>
+                        </div>
+                        <div className="container">
+                            <h3>My Portfolio</h3>
+                            <img src={require('./myPortfolio.png')} alt='myPortfolio thumb '/>
+                            <p>This is the page you're at. Take a look, how it's made. React.JS + CSS animations</p>
+                            <div className="buttons">
+                                <a href='https://portfolio-42c10.web.app' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='Portfolio - URL'/></a>
+                                <a href='https://github.com/ant-st/myPortfolio' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - Portfolio'/></a>
                             </div>
                         </div>
                     </section>
