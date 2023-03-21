@@ -11,12 +11,13 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+
 
     justify-content: space-between;
     align-items: center;
