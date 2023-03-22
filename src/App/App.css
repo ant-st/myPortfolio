@@ -4,6 +4,12 @@ html, body {
   background-color: #f2f0ee;
 }
 
+a {
+  color: #474749;
+  text-decoration: none;
+}
+
+
 #root {
   height: 90%;
   width: 90%;

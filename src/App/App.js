@@ -1,66 +1,102 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import './App.css';
-import {Education} from "../Education/education";
-import {Skills} from "../Skills/skills";
-import {Portfolio} from "../Portfolio/portfolio";
-import {Home} from "../Home/home";
+import {Education, EducationEN} from "../Education/education";
+import {Skills, SkillsEN} from "../Skills/skills";
+import {Portfolio, PortfolioEN} from "../Portfolio/portfolio";
+import {Home, HomeEN} from "../Home/home";
 import AOS from 'aos';
+import {RouterProvider, createRoutesFromElements, Route, createBrowserRouter, Outlet, Link} from "react-router-dom";
+import ErrorPage from "../errorPage";
+
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route>
+            <Route path="/" element= {<Root/>} errorElement={<ErrorPage/>}>
+                <Route path="/" index element={<Home/>}/>
+                <Route path="edu" index element={<Education/>}/>
+                <Route path="skills" index element={<Skills/>}/>
+                <Route path="port" index element={<Portfolio/>}/>
+            </Route>
+            <Route path="/en" element= {<RootEN/>} errorElement={<ErrorPage/>}>
+        <Route path="" index element={<HomeEN/>}/>
+        <Route path="edu" index element={<EducationEN/>}/>
+        <Route path="skills" index element={<SkillsEN/>}/>
+        <Route path="port" index element={<PortfolioEN/>}/>
+    </Route>
+        </Route>
+    ));
+
+function Root() {
+    return (
+        <div className="App">
+            <header className="App-header">
+                <h1 id='navHome'><Link to="/">Antoni Sarnowski-Trypka</Link></h1>
+                <nav className="navBar">
+                    <ul>
+                        <li id="navEdu"><Link to="edu">Edukacja</Link></li>
+                        <li id="navSkill"><Link to="skills">Umiejętności</Link></li>
+                        <li id="navPort"><Link to="port">Portfolio</Link></li>
+                        <li><Link to="en">🇬🇧</Link></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="contact">
+                <a href="https://github.com/ant-st" target="_blank" rel="noopener noreferrer" ><img src={require('./ghlogo.png')} alt="GitHub logo"/></a>
+                <a href="https://www.linkedin.com/in/antoni-sarnowski-trypka-268079263/" target="_blank" rel="noopener noreferrer" ><img src={require('./linkedlogo.png')} alt="LinkedIn logo"/></a>
+                <a href="mailto:antsarnow@gmail.com" target="_blank" rel="noopener noreferrer" ><img src={require('./mailicon.png')} alt="Mail icon"/></a>
+            </section>
+            <section id="content">
+                <Outlet/>
+            </section>
+            <section id="contactMobile">
+                <a href="https://github.com/ant-st" target="_blank" rel="noopener noreferrer" ><img src={require('./ghlogo.png')} alt="GitHub logo"/></a>
+                <a href="https://www.linkedin.com/in/antoni-sarnowski-trypka-268079263/" target="_blank" rel="noopener noreferrer" ><img src={require('./linkedlogo.png')} alt="LinkedIn logo"/></a>
+                <a href="mailto:antsarnow@gmail.com" target="_blank" rel="noopener noreferrer" ><img src={require('./mailicon.png')} alt="Mail icon"/></a>
+            </section>
+        </div>
+    )
+}
+
+function RootEN() {
+    return (
+        <div className="App">
+            <header className="App-header">
+                <h1 id='navHome'><Link to="">Antoni Sarnowski-Trypka</Link></h1>
+                <nav className="navBar">
+                    <ul>
+                        <li id="navEdu"><Link to="edu">Education</Link></li>
+                        <li id="navSkill"><Link to="skills">Skills</Link></li>
+                        <li id="navPort"><Link to="port">Portfolio</Link></li>
+                        <li><Link to="/">🇵🇱</Link></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="contact">
+                <a href="https://github.com/ant-st" target="_blank" rel="noopener noreferrer" ><img src={require('./ghlogo.png')} alt="GitHub logo"/></a>
+                <a href="https://www.linkedin.com/in/antoni-sarnowski-trypka-268079263/" target="_blank" rel="noopener noreferrer" ><img src={require('./linkedlogo.png')} alt="LinkedIn logo"/></a>
+                <a href="mailto:antsarnow@gmail.com" target="_blank" rel="noopener noreferrer" ><img src={require('./mailicon.png')} alt="Mail icon"/></a>
+            </section>
+            <section id="content">
+                <Outlet/>
+            </section>
+            <section id="contactMobile">
+                <a href="https://github.com/ant-st" target="_blank" rel="noopener noreferrer" ><img src={require('./ghlogo.png')} alt="GitHub logo"/></a>
+                <a href="https://www.linkedin.com/in/antoni-sarnowski-trypka-268079263/" target="_blank" rel="noopener noreferrer" ><img src={require('./linkedlogo.png')} alt="LinkedIn logo"/></a>
+                <a href="mailto:antsarnow@gmail.com" target="_blank" rel="noopener noreferrer" ><img src={require('./mailicon.png')} alt="Mail icon"/></a>
+            </section>
+        </div>
+    )
+}
+
 
 function App() {
     useEffect(() => {
         AOS.init({duration: 800, once: true});
     }, []);
 
-    const [page, setPage] = useState();
-    const [polish, setPolish] = useState(true);
-    const handleClick = ({target}) => {
-        setPage(target.id);
-    }
-    const toggleLang = () => {
-        if (polish) setPolish(false);
-        else setPolish(true);
-    }
-
-    const renderPage = () => {
-        switch (page) {
-            case 'navEdu':
-                return <Education polish={polish}/>
-            case 'navSkill':
-                return <Skills polish={polish}/>
-            case 'navPort':
-                return <Portfolio polish={polish}/>;
-            default:
-                return <Home polish={polish}/>;
-        }
-    }
-
   return (
-    <div className="App">
-        <header className="App-header">
-            <h1 onClick={handleClick} id='navHome'>Antoni Sarnowski-Trypka</h1>
-            <nav className="navBar">
-                <ul>
-                    <li id="navEdu" onClick={handleClick}>{polish ? 'Edukacja' : 'Education' }</li>
-                    <li id="navSkill" onClick={handleClick}>{polish ? 'Umiejętności' : 'Skills' }</li>
-                    <li id="navPort" onClick={handleClick}>Portfolio</li>
-                    <li onClick={toggleLang}>{polish ? '🇬🇧' : '🇵🇱' }</li>
-                </ul>
-            </nav>
-        </header>
-        <section id="contact">
-            <a href="https://github.com/ant-st" target="_blank" rel="noopener noreferrer" ><img src={require('./ghlogo.png')} alt="GitHub logo"/></a>
-            <a href="https://www.linkedin.com/in/antoni-sarnowski-trypka-268079263/" target="_blank" rel="noopener noreferrer" ><img src={require('./linkedlogo.png')} alt="LinkedIn logo"/></a>
-            <a href="mailto:antsarnow@gmail.com" target="_blank" rel="noopener noreferrer" ><img src={require('./mailicon.png')} alt="Mail icon"/></a>
-        </section>
-        <section id="content">
-            {renderPage()}
-        </section>
-        <section id="contactMobile">
-            <a href="https://github.com/ant-st" target="_blank" rel="noopener noreferrer" ><img src={require('./ghlogo.png')} alt="GitHub logo"/></a>
-            <a href="https://www.linkedin.com/in/antoni-sarnowski-trypka-268079263/" target="_blank" rel="noopener noreferrer" ><img src={require('./linkedlogo.png')} alt="LinkedIn logo"/></a>
-            <a href="mailto:antsarnow@gmail.com" target="_blank" rel="noopener noreferrer" ><img src={require('./mailicon.png')} alt="Mail icon"/></a>
-        </section>
-    </div>
+        <RouterProvider router={router} />
   );
 }
 

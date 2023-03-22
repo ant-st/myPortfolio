@@ -1,10 +1,9 @@
 import React from "react";
 import './portfolio.css'
 
-export const Portfolio = (props) => {
+export const Portfolio = () => {
     return (
-        <div>
-            {props.polish ? (
+
         <section id="portfolio">
             <h2>Tutaj znajdziecie Państwo część moich projektów, razem z linkiem do witryny, jak i do repozytorium w GitHub.</h2>
             <section id="gallery">
@@ -27,7 +26,13 @@ export const Portfolio = (props) => {
                     </div>
                 </div>
             </section>
-        </section>) : (
+        </section>
+    )
+
+};
+
+export const PortfolioEN = () => {
+    return (
                 <section id="portfolio">
                     <h2>Here you can find a few of my former projects, along with a hyperlink to them and a GitHub repository.</h2>
                     <section id="gallery">
@@ -51,8 +56,6 @@ export const Portfolio = (props) => {
                         </div>
                     </section>
                 </section>
-                )}
-        </div>
     )
 
 };

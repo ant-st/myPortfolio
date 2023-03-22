@@ -3,8 +3,6 @@ import './education.css'
 
 export const Education = (props) => {
     return (
-        <section>
-        {props.polish ? (
             <section className="education" data-aos="fade-down">
                 <section id="codecademy">
                     <img src={require('./codelogo.png')} alt="Logo codecademy" id="codelogo"/>
@@ -40,9 +38,13 @@ export const Education = (props) => {
                     <p>Prowadzenie firmy nauczyło mnie m.in. organizacji własnego czasu, kontaktu i negocjacji z Klientem, prowadzenia działalności oraz pracy pod presją.</p>
                     <p>Indywidualne podejście do Klienta oraz wiedza branżowa pozwoliły mi zyskać tytuł „Najlepszej Firmy” 2021 i 2022 wg portalu Oferteo.</p>
                 </section>
-            </section>)
-            :
-            (<section className="education" data-aos="fade-down">
+        </section>
+    )
+}
+
+export const EducationEN = () => {
+    return (
+        <section className="education" data-aos="fade-down">
                 <section id="codecademy">
                     <img src={require('./codelogo.png')} alt="Logo codecademy" id="codelogo"/>
                     <p>By the end of 2022 I have started learning front-end development on American platform Codecademy.</p>
@@ -73,11 +75,10 @@ export const Education = (props) => {
                     <p>Having achieved one of the highest grades on my faculty, I was awarded with Rector's Scholarship for my final 2 semesters.</p>
                 </section>
                 <section id="work">
-                <p>March 2021 was the time when I have decided to set up my own company, in which I have been working as a security systems complex installer - from calculating the offer, through programming and installing the devices, up to maintenance. </p>
-                <p>Running my own business has taught me how to deal with customers, even the challenging ones, how to manage my own time, work under-pressure and how to be self-sufficient.</p>
-                <p>My attitude to end-customers rewarded in our company winning the "The Best Installer" award in 2021 and 2022 organised by Oferteo website.</p>
+                    <p>March 2021 was the time when I have decided to set up my own company, in which I have been working as a security systems complex installer - from calculating the offer, through programming and installing the devices, up to maintenance. </p>
+                    <p>Running my own business has taught me how to deal with customers, even the challenging ones, how to manage my own time, work under-pressure and how to be self-sufficient.</p>
+                    <p>My attitude to end-customers rewarded in our company winning the "The Best Installer" award in 2021 and 2022 organised by Oferteo website.</p>
                 </section>
-            </section>)}
-        </section>
+            </section>
     )
 }
