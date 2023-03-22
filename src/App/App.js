@@ -5,7 +5,7 @@ import {Skills, SkillsEN} from "../Skills/skills";
 import {Portfolio, PortfolioEN} from "../Portfolio/portfolio";
 import {Home, HomeEN} from "../Home/home";
 import AOS from 'aos';
-import {RouterProvider, createRoutesFromElements, Route, createBrowserRouter, Outlet, Link} from "react-router-dom";
+import {RouterProvider, createRoutesFromElements, Route, createBrowserRouter, Outlet, NavLink, Link} from "react-router-dom";
 import ErrorPage from "../errorPage";
 
 
@@ -34,9 +34,9 @@ function Root() {
                 <h1 id='navHome'><Link to="/">Antoni Sarnowski-Trypka</Link></h1>
                 <nav className="navBar">
                     <ul>
-                        <li id="navEdu"><Link to="edu">Edukacja</Link></li>
-                        <li id="navSkill"><Link to="skills">Umiejętności</Link></li>
-                        <li id="navPort"><Link to="port">Portfolio</Link></li>
+                        <li id="navEdu"><NavLink to="edu">Edukacja</NavLink></li>
+                        <li id="navSkill"><NavLink to="skills">Umiejętności</NavLink></li>
+                        <li id="navPort"><NavLink to="port">Portfolio</NavLink></li>
                         <li><Link to="en">🇬🇧</Link></li>
                     </ul>
                 </nav>
@@ -65,9 +65,9 @@ function RootEN() {
                 <h1 id='navHome'><Link to="">Antoni Sarnowski-Trypka</Link></h1>
                 <nav className="navBar">
                     <ul>
-                        <li id="navEdu"><Link to="edu">Education</Link></li>
-                        <li id="navSkill"><Link to="skills">Skills</Link></li>
-                        <li id="navPort"><Link to="port">Portfolio</Link></li>
+                        <li id="navEdu"><NavLink to="edu">Education</NavLink></li>
+                        <li id="navSkill"><NavLink to="skills">Skills</NavLink></li>
+                        <li id="navPort"><NavLink to="port">Portfolio</NavLink></li>
                         <li><Link to="/">🇵🇱</Link></li>
                     </ul>
                 </nav>
