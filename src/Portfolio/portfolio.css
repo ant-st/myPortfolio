@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: column;
 
-
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -43,13 +42,14 @@
 .container img {
     max-height: 300px;
     width: 80%;
+    border-radius: 10px;
 }
 
 .buttons {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 15px;
-
+    justify-self: flex-end;
 }
 
 .buttons img {

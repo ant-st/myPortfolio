@@ -27,7 +27,7 @@ export const Skills = (props) => {
                         <li>Rozumienie i używanie takich konceptów, jak currying, hoisting, concurrency</li>
                         <li>Znajomość składni JS ES6, w tym arrow functions, Promises, fetch</li>
                         <li>Znajomość DOM oraz event handlerów</li>
-                        <li>Programowanie zgodnie z metodą Test-Driven Development, pisanie własnych testów przy pomocy bibliotek Mocha i Chai</li>
+                        <li>Programowanie zgodnie z metodą Test-Driven Development, pisanie własnych testów przy pomocy bibliotek Mocha, Chai, JEST</li>
                     </ul>
                 </div>
     );
@@ -53,8 +53,9 @@ export const Skills = (props) => {
                         <li>Tworzenie własnych komponentów zarówno przy pomocy klas, jak i funkcji</li>
                         <li>Używanie komponentów obcych przy pomocy dokumentacji</li>
                         <li>Używanie React Hooks (m.in state, effect) i dziedziczenie atrybutów między komponentami</li>
-                        <li>Korzystanie z React Development Tools</li>
+                        <li>Znajomość React Redux i Redux Toolkit</li>
                         <li>Budowanie statycznych wersji aplikacji gotowych do opublikowania</li>
+                        <li>Używanie React Router</li>
                     </ul>
                 </div>
     )
@@ -244,7 +245,7 @@ export const SkillsEN = (props) => {
                         <li>Understanding and proper implementing currying, hoisting, concurrency</li>
                         <li>Knowledge of JS ES6 syntax, including arrow functions, Promises, fetch</li>
                         <li>Knowledge of DOM and event handlers</li>
-                        <li>Capability of Test-Driven Development programming, writing my own tests using Mocha & Chai</li>
+                        <li>Capability of Test-Driven Development programming, writing my own tests using Mocha, Chai & JEST</li>
                     </ul>
                 </div>
     );
@@ -271,8 +272,9 @@ export const SkillsEN = (props) => {
                         <li>Creating new class and function components</li>
                         <li>Implementing and using third-party components thanks to documentation</li>
                         <li>Using React Hooks (eg. state, effect) and passing the props to components</li>
-                        <li>Usage of React Development Tools</li>
+                        <li>Usage of React Redux and Redux Toolkit</li>
                         <li>Building static versions ready to be deployed</li>
+                        <li>Usage of React Router</li>
                     </ul>
                 </div>
 
