@@ -9,6 +9,17 @@ export const Portfolio = () => {
             <section id="gallery">
                 <div className="container">
                     <div>
+                        <h3>RedditMini</h3>
+                        <img src={require('./reddit.png')} alt='RedditMini thumb'/>
+                        <p>Finalny projekt mojego kursu Codecademy - klon Reddita, wykorzystujący jego API. Strona napisana w React.JS, używa Redux Toolkit. Responsywna i zanimowana.</p>
+                    </div>
+                    <div className="buttons">
+                        <a href='https://redditmini-2d1a9.web.app' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='RedditMini - URL'/></a>
+                        <a href='https://github.com/ant-st/redditmini' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - RedditMini'/></a>
+                    </div>
+                </div>
+                <div className="container">
+                    <div>
                         <h3>Novo Garden</h3>
                         <img src={require('./novo.png')} alt='NovoGarden thumb'/>
                         <p>Strona wykonana w ReactJS, prezentująca ofertę biura architekta krajobrazu. Wszystkie komponenty wykonane przeze mnie.</p>
@@ -51,6 +62,17 @@ export const PortfolioEN = () => {
                 <section id="portfolio">
                     <h2>Here you can find a few of my former projects, along with a hyperlink to them and a GitHub repository.</h2>
                     <section id="gallery">
+                        <div className="container">
+                            <div>
+                                <h3>RedditMini</h3>
+                                <img src={require('./reddit.png')} alt='RedditMini thumb'/>
+                                <p>My final Codecademy project - Reddit clone, which uses its API. Written in React.JS using Redux Toolkit. Responsive and animated.</p>
+                            </div>
+                            <div className="buttons">
+                                <a href='https://redditmini-2d1a9.web.app' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='RedditMini - URL'/></a>
+                                <a href='https://github.com/ant-st/redditmini' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - RedditMini'/></a>
+                            </div>
+                        </div>
                         <div className="container">
                             <div>
                                 <h3>Novo Garden</h3>

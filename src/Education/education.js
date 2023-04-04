@@ -1,7 +1,7 @@
 import React from "react";
 import './education.css'
 
-export const Education = (props) => {
+export const Education = () => {
     return (
             <section className="education" data-aos="fade-down">
                 <section id="codecademy">
@@ -10,12 +10,13 @@ export const Education = (props) => {
                     <p>Ukończyłem następujące kursy:</p>
                     <ul>
                         <li><a href="https://www.codecademy.com/learn/paths/web-development" target="_blank" rel="noopener noreferrer">ścieżka umiejętności "Web Development" - 11.2022 -> 02.2023</a></li>
-                        <li>ścieżka kariery "Front-End Developer" - 11.2022 -> 04.2023</li>
+                        <li><a href="https://www.codecademy.com/career-journey/front-end-engineer" target="_blank" rel="noopener noreferrer">ścieżka kariery "Front-End Developer" - 11.2022 -> 04.2023</a></li>
                         <li><a href="https://www.codecademy.com/learn/learn-vue-js" target="_blank" rel="noopener noreferrer">Kurs "Learn Vue.js" - 03.2023</a></li>
                     </ul>
                     <p>Kurs pozwolił mi nabyć umiejętności niezbędne do kompleksowego budowania własnych stron internetowych i aplikacji.</p>
                     <p>Szczegółowy zakres materiału dostępny jest po naciśnięciu na ww. nazwę kursu.</p>
                     <div id="certificates">
+                        <img src={require('./FEEcert.png')} alt="FEE certificate"/>
                         <img src={require('./WDCert.png')} alt="WebDev certificate"/>
                         <img src={require('./VUEcert.png')} alt="vue.js certificate"/>
                     </div>
@@ -51,12 +52,13 @@ export const EducationEN = () => {
                     <p>By now, I have successfully finished:</p>
                     <ul>
                         <li><a href="https://www.codecademy.com/learn/paths/web-development" target="_blank" rel="noopener noreferrer">"Web Development" Skill Path - 11.2022 -> 02.2023</a></li>
-                        <li>"Front-End Developer" Career Path- 11.2022 -> 04.2023</li>
+                        <li><a href="https://www.codecademy.com/career-journey/front-end-engineer" target="_blank" rel="noopener noreferrer">"Front-End Developer" Career Path- 11.2022 -> 04.2023</a></li>
                         <li><a href="https://www.codecademy.com/learn/learn-vue-js" target="_blank" rel="noopener noreferrer">"Learn Vue.js" course - 03.2023</a></li>
                     </ul>
                     <p>The courses have provided me enough knowledge and skills necessary to start deploying my own websites and applications.</p>
                     <p>Detailed syllabus of courses I have completed is available upon clicking on its name.</p>
                     <div id="certificates">
+                        <img src={require('./FEEcert.png')} alt="FEE certificate"/>
                         <img src={require('./WDCert.png')} alt="WebDev certificate"/>
                         <img src={require('./VUEcert.png')} alt="vue.js certificate"/>
                     </div>
