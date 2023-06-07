@@ -41,6 +41,7 @@ export const Skills = (props) => {
                         <li>Używanie flexbox i grid</li>
                         <li>Tranzycje i animacje</li>
                         <li>Responsywność - dopasowanie strony do urządzeń mobilnych i niestandardowych ekranów</li>
+                        <li>Znajomość frameworku Tailwind</li>
                     </ul>
                 </div>)
 
@@ -128,12 +129,13 @@ export const Skills = (props) => {
 
     const desVue = (
         <div>
-                    <p>Jestem zaznajomiony z frameworkiem Vue.js na poziomie podstawowym. Cały czas poszerzam swą wiedzę w tym zakresie.</p>
+                    <p>Jestem zaznajomiony z frameworkiem Vue.js. Cały czas poszerzam swą wiedzę w tym zakresie, między innymi na kursach VueSchool.</p>
                     <p>Wybrane umiejętności:</p>
                     <ul>
-                        <li>Dodanie Vue do projektu</li>
-                        <li>Tworzenie formularzy</li>
-                        <li>Budowanie designu strony</li>
+                        <li>Znajomość Vue 3, VueUse, Vue Router, Compositon API, Pinia.</li>
+                        <li>Zaawansowana znajomość frameworku Nuxt.js 3 potwierdzona certyfikatem.</li>
+                        <li>Znajomość pakietu I18n do tworzenia wielojęzykowych aplikacji.</li>
+                        <li>Podstawowa znajomość TypeScript przy współpracy z Vue/Nuxt</li>
                     </ul>
                 </div>
     )
@@ -259,6 +261,7 @@ export const SkillsEN = (props) => {
                         <li>Using flexbox & grid</li>
                         <li>Transitions and animations</li>
                         <li>Responsiveness - making sure the app works properly on different browsers and various screens</li>
+                        <li>Familiarity with Tailwind CSS framework</li>
                     </ul>
         </div>
     )
@@ -348,12 +351,13 @@ export const SkillsEN = (props) => {
 
     const desVue = (
         <div>
-                    <p>I am familiar with basics of Vue.js framework, but I keep on learning this subject.</p>
+                    <p>I am familiar with Vue.js 3 framework, and I keep on getting along with it with VueSchool.</p>
                     <p>Some of my skills:</p>
                     <ul>
-                        <li>Implementing Vue onto website</li>
-                        <li>Making forms</li>
-                        <li>Building website's design</li>
+                        <li>Vast knowledge of Vue 3, Vue Router, Composition API, VueUse, Pinia</li>
+                        <li>Proficiency with Nuxt 3 framework with Master certification</li>
+                        <li>Familiarity with I18n multilanguage module.</li>
+                        <li>Basics of TypeScript used with Vue and Nuxt.</li>
                     </ul>
         </div>
     )

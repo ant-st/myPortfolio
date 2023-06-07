@@ -9,6 +9,44 @@ export const Portfolio = () => {
             <section id="gallery">
                 <div className="container">
                     <div>
+                        <h3>Endless Summer Cup 2023!</h3>
+                        <img src={require('./es2023.png')} alt='ES2023 thumb'/>
+                        <p>Strona internetowa wydarzenia sportowego przystosowana do urządzeń mobilnych. Zawiera informacje o wydarzeniu, formularz zapisowy
+                        zintegrowany z Firebase DB, a także pozwala na oglądanie listy zawodników. W przyszłości umożliwi wysłanie muzyki do występu oraz wpisywanie wyników na żywo.
+                         Aplikacja Nuxt.js z użyciem I18n dla multijęzyczności</p>
+                    </div>
+                    <div className="buttons">
+                        <a href='https://endless-summer-2023.web.app' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='ES2023 - URL'/></a>
+                        <a href='https://github.com/ant-st/endless-summer-2023' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - ES2023'/></a>
+                    </div>
+                </div>
+                <div className="container">
+                    <div>
+                        <h3>Fly or ride</h3>
+                        <img src={require('./fly.png')} alt='Fly thumb'/>
+                        <p>Duża aplikacja stworzona jako moja wymarzona platforma do planowania podróży. Projekt jeszcze w budowie.
+                            Zawiera dużo integracji API, używa Nuxt, TS, Tailwind CSS. Pelny opis aplikacji w README na GH.</p>
+                    </div>
+                    <div className="buttons">
+                        <a href='https://flyorride.web.app' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='Fly - URL'/></a>
+                        <a href='https://github.com/ant-st/flyorride' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - Fly'/></a>
+                    </div>
+                </div>
+                <div className="container">
+                    <div>
+                        <h3>Yes, chef!</h3>
+                        <img src={require('./yeschef.png')} alt='YesChef thumb'/>
+                        <p>Kompleksowa aplikacja do obsługi restauracji, od przyjmowania zamówień i dostaw, po podsumowania dnia z roliczaniem.
+                            Używa React + Router i Redux, Google Maps API, Express server i SQLite3.
+                            Z powodu ograniczeń Firebase nie opublikowałem jeszcze działającej aplikacji, dlatego dołączam link do YT.</p>
+                    </div>
+                    <div className="buttons">
+                        <a href='https://youtu.be/7S1CFsIokk0' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='YesChef - URL'/></a>
+                        <a href='https://github.com/ant-st/restomanager' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - Resto'/></a>
+                    </div>
+                </div>
+                <div className="container">
+                    <div>
                         <h3>RedditMini</h3>
                         <img src={require('./reddit.png')} alt='RedditMini thumb'/>
                         <p>Finalny projekt mojego kursu Codecademy - klon Reddita, wykorzystujący jego API. Strona napisana w React.JS, używa Redux Toolkit. Responsywna i zanimowana.</p>
@@ -62,6 +100,44 @@ export const PortfolioEN = () => {
                 <section id="portfolio">
                     <h2>Here you can find a few of my former projects, along with a hyperlink to them and a GitHub repository.</h2>
                     <section id="gallery">
+                        <div className="container">
+                            <div>
+                                <h3>Endless Summer Cup 2023!</h3>
+                                <img src={require('./es2023.png')} alt='ES2023 thumb'/>
+                                <p>Sports event's webpage providing all necessary info as well as enabling to sign up for the competition,
+                                    as well as checking out the competitors. In the future, the app will enable to post the freestyle music and to write down scores in real time.
+                                    App uses Nuxt.js with I18n for multilingual content and Firebase Services.</p>
+                            </div>
+                            <div className="buttons">
+                                <a href='https://endless-summer-2023.web.app' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='ES2023 - URL'/></a>
+                                <a href='https://github.com/ant-st/endless-summer-2023' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - ES2023'/></a>
+                            </div>
+                        </div>
+                        <div className="container">
+                            <div>
+                                <h3>Fly or ride</h3>
+                                <img src={require('./fly.png')} alt='Fly thumb'/>
+                                <p>My dream app used to plan the perfect trip. It enables comparing many travel related services in one place. Full documentation is in ReadMe on GH.
+                                    App coded in Nuxt.js with Tailwind, TypeScript and many APIs.</p>
+                            </div>
+                            <div className="buttons">
+                                <a href='https://flyorride.web.app' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='Fly - URL'/></a>
+                                <a href='https://github.com/ant-st/flyorride' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - Fly'/></a>
+                            </div>
+                        </div>
+                        <div className="container">
+                            <div>
+                                <h3>Yes, chef!</h3>
+                                <img src={require('./yeschef.png')} alt='YesChef thumb'/>
+                                <p>Complex full-stack web app used to manage the restaurant - from taking orders and deliveries up to sales summaries.
+                                    It uses React with Router and Redux, Google Maps API, Express server and SQLite3.
+                                    Due to Firebase limitations I cannot run Express server on it, that is why I post link to YT presentation.</p>
+                            </div>
+                            <div className="buttons">
+                                <a href='https://youtu.be/7S1CFsIokk0' target='_blank' rel="noreferrer" ><img src={require('./web.png')} alt='YesChef - URL'/></a>
+                                <a href='https://github.com/ant-st/restomanager' target='_blank' rel="noreferrer" ><img src={require('./ghlogo.png')} alt='Link to GH - Resto'/></a>
+                            </div>
+                        </div>
                         <div className="container">
                             <div>
                                 <h3>RedditMini</h3>
